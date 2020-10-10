@@ -1,0 +1,141 @@
+.sale-invoice-wrap{
+  background: $color-ui-01;
+  padding: 20px;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+}
+.register-items-holder{
+  border: 1px solid $border-color;
+  border-radius: 4px;
+}
+.register-items-holder table{
+  margin-bottom: 0;
+}
+tr.register-items-header {
+  min-height: 25px;
+  line-height: 25px;
+  background-color: $color-ui-01;
+  font-size: 14px;
+  font-weight: $font-weight-semibold;
+}
+tr.register-items-header th{
+  border: none !important;
+}
+.register-item-content tr td{
+  padding: 8px 25px;
+  font-size: 14px;
+}
+
+.customer-wrap{
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  .customer-info{
+    padding: 15px;
+  }
+  .customer-action{
+    border-top: 1px solid $border-color;
+    .customer-action-list{
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: separate;
+      li{
+        display: table-cell;
+        text-align: center;
+        margin: 0;
+        border-right: 1px solid $border-color;
+        &:last-child{
+          border-right: none;
+        }
+        a{
+          padding: 10px;
+          display: block;
+          font-size: 13px;
+          font-weight: $font-weight-semibold;
+          color: $text-color-03;
+          i{
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.order-form-wrap{
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  .order-list-wrap{
+    padding: 15px;
+
+  }
+}
+
+
+
+.order-summary-list {
+  margin-bottom: 0;
+  list-style: none;
+  border-bottom: 1px solid hsla(0,0%,100%,.24);
+  font-size: 13px;
+  line-height: 18px;
+}
+.order-summary-list .summary-list-item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.order-summary-list .summary-list-item .pull-left {
+  max-width: 70%;
+  flex-basis: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: inherit;
+}
+.order-summary-list .summary-list-item .pull-right {
+  flex-basis: 40%;
+  text-align: right;
+  padding-left: 8px;
+}
+.summary-list-item.sub-total{
+  font-weight: $font-weight-semibold;
+}
+
+
+
+
+
+
+.total-amount-wrap{
+  border-top: 1px dashed $border-color;
+  background: $color-ui-01;
+
+  .total-amount{
+    padding: 10px 10px;
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    &:nth-child(1){
+      border-right: 1px dashed $border-color;
+    }
+    h5{
+      font-size: 15px;
+    }
+    .total{
+      font-size: 22px;
+      color: $success;
+      font-weight: 700;
+      line-height: initial;
+    }
+    .total.due{
+      color: $color-secondary
+    }
+  }
+}
+
+.add-payment-wrap{
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  padding: 15px;
+}

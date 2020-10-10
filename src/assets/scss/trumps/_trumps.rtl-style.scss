@@ -1,0 +1,130 @@
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+.header .menu ul{
+  right: 0;
+  left: auto;
+}
+.header .menu ul:after{
+  right: 35px;
+}
+.header .menu li a.dropdown-toggle:after{
+  right: 2px;
+}
+
+.header .menu ul ul:after{
+  left: 0;
+  right: -16px;
+  border-right-color: transparent;
+  border-left-color: #f5f5f5;
+}
+.header .menu ul li a.dropdown-toggle-inner:after{
+  content: "\f104";
+  left: 10px;
+  margin-left: 0;
+  right: auto;
+}
+.header .menu ul ul{
+  left: auto;
+  right: 200px;
+}
+
+
+//about
+.dot-circle li{
+  padding-right: 25px;
+}
+.dot-circle li:before{
+  right: 0;
+}
+.check-list-wrap.list-two-col li{
+  padding-left: 15px;
+  padding-right: 25px;
+}
+.check-list-wrap li {
+  padding: .5rem 1.875rem .5rem 0;
+}
+.check-list-wrap li:before{
+  right: 0;
+}
+
+
+.work-process-wrap .process-icon-item svg{
+  display: none;
+}
+
+.support-cta h5 span{
+  margin-right: 1rem;
+}
+
+.faq-wrap .card .card-header:after{
+  float: left;
+}
+
+.testimonial-content-wrap .testimonial-shape .testimonial-quote-wrap .author-info .media-body{
+  right: 120px;
+}
+
+.newsletter-form button{
+  left: 4px;
+  right: auto;
+}
+.newsletter-form .input-newsletter{
+  padding-left: auto;
+  padding-right: 25px;
+}
+
+
+.shape-image{
+  right: 268px;
+  left: 0;
+}
+.shape-img-2{
+  right: 0;
+  left: auto;
+}
+
+.group-shape-2{
+  right: 9.2vw;
+}
+.custom-breadcrumb ol li.breadcrumb-item{
+  padding-right: 0;
+}
+.widget-search .search-button{
+  right: auto;
+  left: .875rem;
+}
+.widget-recent-entries-custom .wi{
+  float: right;
+}
+.widget-recent-entries-custom .wb{
+  padding-right: 16px;
+  padding-left: 0;
+}
+.widget a{
+  text-align: right;
+}
+.post-meta > li {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 14px;
+  margin: 0 0 0 14px;
+}
+.post-meta > li:not(:last-child):after{
+  left: -5px;
+}
+.post-content blockquote{
+  border-right: 2px solid #eaeaea;
+  padding: 10px 40px 10px 0;
+  border-left: none;
+}
+.post-content ul, .post-content ol {
+  margin: 15px 40px 15px 0;
+}
+
+.login-signup-form .form-group .input-group .input-icon{
+  right: 0;
+  position: inherit;
+}
