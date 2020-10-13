@@ -2,6 +2,12 @@
   border-radius: 1rem;
   transition: $global-transition;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
+  img{
+    max-height: 40px;
+  }
+  h5, p{
+    text-align: center!important;
+  }
   &.single-promo-hover{
     transition: $global-transition;
     overflow: hidden;
@@ -12,6 +18,7 @@
       color: $white;
       span, h5{
         color: $white !important;
+        text-align: center;
       }
       &:before{
         content: '';

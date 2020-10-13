@@ -5,12 +5,12 @@
       <div class="row justify-content-center">
         <div class="col-md-9 col-lg-8">
           <div class="section-heading text-center mb-1 text-white">
-            <h2 class="text-white">Download Our Apps</h2>
+            <h2 class="text-white">Descarga nuestras apps</h2>
             <p>
-              Start working with that can provide everything you need to
-              generate awareness, drive traffic, connect. Efficiently transform
-              granular value with client-focused content. Energistically
-              redefine market.
+              Empezar a trabajar con eso puede proporcionar todo lo que necesitas para
+              generar conciencia, conducir el tráfico, conectar. Transformar eficientemente
+              valor granular con contenido centrado en el cliente. Energéticamente
+              redefinir el mercado.
             </p>
             <div class="action-btns mt-4">
               <ul class="list-inline">

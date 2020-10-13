@@ -1,63 +1,66 @@
 <template>
-  <section class="promo-section ptb-100" v-bind:class="{ 'gray-light-bg' : isGray }">
+  <section
+    class="promo-section ptb-100"
+    v-bind:class="{ 'gray-light-bg': isGray }"
+  >
     <div class="container">
       <div class="row" v-show="showDesc">
         <div class="col-lg-7 col-md-10">
           <div class="section-heading">
             <h2>We Will Helps You to Build Beautiful App</h2>
-            <p>Uniquely repurpose strategic core competencies with progressive content. Assertively transition ethical imperatives and collaborative manufactured products. </p>
+            <p>
+              Uniquely repurpose strategic core competencies with progressive
+              content. Assertively transition ethical imperatives and
+              collaborative manufactured products.
+            </p>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4 d-flex">
           <div class="card border-0 single-promo-card p-2 mt-4 shadow">
             <div class="card-body">
-              <div class="pb-2">
-                <span class="fas fa-concierge-bell icon-size-md color-secondary"></span>
+              <div class="pb-2 d-flex justify-content-center">
+                <img :src="require('@/assets/img/ruedaz/icon-feature-1.svg')" class="mx-auto" alt="RUEDAZ">
               </div>
               <div class="pt-2 pb-3">
-                <h5>Modular</h5>
-                <p class="mb-0">All components are built to be used in combination.</p>
+                <h5>Más de 130 parqueaderos disponibles</h5>
+                <p class="mb-0">
+                  Disfruta de la red más amplia de parqueaderos del país.
+                  ¡Puedes usarlos todos!.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4 d-flex">
           <div class="card border-0 single-promo-card p-2 mt-4 shadow">
             <div class="card-body">
-              <div class="pb-2">
-                <span class="fas fa-window-restore icon-size-md color-secondary"></span>
+              <div class="pb-2 d-flex justify-content-center">
+                <img :src="require('@/assets/img/ruedaz/icon-feature-2.svg')" alt="">
               </div>
               <div class="pt-2 pb-3">
-                <h5>Responsive</h5>
-                <p class="mb-0">Quick is optimized to work for most devices.</p>
+                <h5>Hasta 3 horas en cada parqueadero sin costo adicional</h5>
+                <p class="mb-0">
+                  El tiempo suficiente para que hagas todo lo que quieras. Luego
+                  aplican las tarifas de cada parqueadero.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4 d-flex">
           <div class="card border-0 single-promo-card p-2 mt-4 shadow">
             <div class="card-body">
-              <div class="pb-2">
-                <span class="fas fa-sync-alt icon-size-md color-secondary"></span>
+              <div class="pb-2 d-flex justify-content-center">
+                <img :src="require('@/assets/img/ruedaz/icon-feature-3.svg')" alt="RUEDAZ">
               </div>
               <div class="pt-2 pb-3">
-                <h5>Scalable</h5>
-                <p class="mb-0">Remain consistent while developing new features.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card border-0 single-promo-card p-2 mt-4 shadow">
-            <div class="card-body">
-              <div class="pb-2">
-                <span class="fas fa-bezier-curve icon-size-md color-secondary"></span>
-              </div>
-              <div class="pt-2 pb-3">
-                <h5>Customizable</h5>
-                <p class="mb-0">Change a few variables and the whole theme adapts.</p>
+                <h5>Una placa por suscripción</h5>
+                <p class="mb-0">
+                  Ahorra tiempo y dinero suscribiendo tu vehículo. ¡Todas las
+                  veces que quieras parquear!
+                </p>
               </div>
             </div>
           </div>
@@ -73,15 +76,14 @@ export default {
   props: {
     showDesc: {
       type: Boolean,
-      default: false
+      default: false,
     },
     isGray: {
       type: Boolean,
-      default: false
+      default: false,
     },
-  }
+  },
 };
 </script>
 
-<style>
-</style>
+<style></style>

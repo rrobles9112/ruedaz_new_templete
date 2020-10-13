@@ -4,20 +4,20 @@
             <div class="row">
                 <div class="col-md-6 col-lg-7">
                     <div class="copyright-wrap small-text">
-                        <p class="mb-0">&copy; ThemeTags Design Agency, All rights reserved</p>
+                        <p class="mb-0">&copy; Cooweb Development S.A.S</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-5">
                     <div class="terms-policy-wrap text-lg-right text-md-right text-left">
                         <ul class="list-inline">
                             <li class="list-inline-item">
-                                <a class="small-text" href="#">Terms</a>
+                                <a class="small-text" href="#">Términos y condiciones</a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="small-text" href="#">Security</a>
+                                <a class="small-text" href="#">Seguridad</a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="small-text" href="#">Privacy Policy</a>
+                                <a class="small-text" href="#">Politica de privacidad</a>
                             </li>
                         </ul>
                     </div>

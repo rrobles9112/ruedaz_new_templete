@@ -36,7 +36,7 @@
           <ul class="navbar-nav ml-auto menu">
             <li>
               <a href="#" class="dropdown-toggle">CONOCE MAS DE RUEDAZ</a>
-              <ul class="sub-menu">
+              <!-- <ul class="sub-menu">
                 <li>
                   <router-link to="/">Home Page 01</router-link>
                 </li>
@@ -86,7 +86,7 @@
                     <span class="badge badge-danger">New</span></router-link
                   >
                 </li>
-              </ul>
+              </ul> -->
             </li>
             <li>
               <router-link to="#about" v-scroll-to="'#about'"
@@ -99,8 +99,8 @@
               >
             </li>
             <li>
-              <a href="#" class="dropdown-toggle">Pages</a>
-              <ul class="sub-menu">
+              <a href="#" class="dropdown-toggle">CONTACTENOS</a>
+              <!-- <ul class="sub-menu">
                 <li>
                   <a href="#" class="dropdown-toggle-inner">Login & Sign Up</a>
                   <ul class="sub-menu">
@@ -236,27 +236,7 @@
                     <span class="badge badge-danger">New</span></router-link
                   >
                 </li>
-              </ul>
-            </li>
-            <li>
-              <router-link to="#screenshots" v-scroll-to="'#screenshots'"
-                >Screenshots</router-link
-              >
-            </li>
-            <li>
-              <router-link to="#process" v-scroll-to="'#process'"
-                >Process</router-link
-              >
-            </li>
-            <li>
-              <router-link to="#pricing" v-scroll-to="'#pricing'"
-                >Pricing</router-link
-              >
-            </li>
-            <li>
-              <router-link to="#contact" v-scroll-to="'#contact'"
-                >Contact</router-link
-              >
+              </ul> -->
             </li>
           </ul>
         </div>
