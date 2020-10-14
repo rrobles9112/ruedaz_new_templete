@@ -21,8 +21,7 @@
         </div>
       </div>
       <div class="screenshot-wrap">
-        <div class="screenshot-frame"></div>
-
+        <div class="screenshot-frame"></div> 
         <carousel
           :autoplay="true"
           :dots="true"

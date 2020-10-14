@@ -34,6 +34,7 @@ import ResetPasswordPage from '../pages/auth/ResetPasswordPage';
 
 Vue.use(VueRouter);
 
+
 const routes = [
     {
         path: '/',

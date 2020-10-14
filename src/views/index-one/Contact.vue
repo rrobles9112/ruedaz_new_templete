@@ -34,7 +34,7 @@
                       type="text"
                       class="form-control"
                       name="name"
-                      placeholder="Enter name"
+                      placeholder="Escriba su nombre"
                       required="required"
                       v-model="name"
                     />
@@ -46,7 +46,7 @@
                       type="email"
                       class="form-control"
                       name="email"
-                      placeholder="Enter email"
+                      placeholder="Escriba su correo electronico"
                       required="required"
                       v-model="email"
                     />
@@ -60,7 +60,7 @@
                       class="form-control"
                       rows="7"
                       cols="25"
-                      placeholder="Message"
+                      placeholder="Escriba su mensaje aqui"
                       v-model="message"
                     ></textarea>
                   </div>
@@ -71,7 +71,7 @@
                     class="btn btn-brand-02"
                     id="btnContactUs"
                   >
-                    Send Message
+                    Enviar mensaje
                   </button>
                 </div>
               </div>
@@ -80,10 +80,10 @@
         </div>
         <div class="col-md-12 col-lg-6">
           <div class="contact-us-content">
-            <h2>Looking for a excellent Business idea?</h2>
+            <h2>¿Tienes dudas?</h2>
             <p class="lead">
-              Give us a call or drop by anytime, we endeavour to answer all
-              enquiries within 24 hours on business days.
+              Llámenos o visítenos en cualquier momento, nos esforzamos por
+              responder a todos dentro de las 24 horas en días hábiles.
             </p>
             <a href="#" class="btn btn-outline-brand-01 align-items-center">
               Get Directions
@@ -98,8 +98,8 @@
                   ></span>
                 </div>
                 <div class="contact-text">
-                  <h5 class="mb-1">Company Location</h5>
-                  <p>100 Yellow House, Mn Factory, United State, 13420</p>
+                  <h5 class="mb-1">Nuestras Oficinas</h5>
+                  <p>Carrera 14 # 89-48, Bogota, Colombia</p>
                 </div>
               </li>
               <li class="d-flex pb-3">
@@ -108,9 +108,9 @@
                     class="fas fa-envelope color-primary rounded-circle p-3"
                   ></span>
                 </div>
-                <div class="contact-text">
-                  <h5 class="mb-1">Email Address</h5>
-                  <p>hello@yourdomain.com</p>
+                <div class="contact-text" @click.stop="">
+                  <h5 class="mb-1">Correo Atencion al usuario</h5>
+                  <p>contacto@ruedaz.com</p>
                 </div>
               </li>
             </ul>
