@@ -14,7 +14,8 @@
           <div class="section-heading text-center mb-5">
             <h2>Apps Screenshots</h2>
             <p>
-              Expereincia de usuario nunca a sido tan facil a la hora de obtener un parqueadero tu vehiculo, moto o bicicleta
+              Expereincia de usuario nunca a sido tan facil a la hora de obtener
+              un parqueadero tu vehiculo, moto o bicicleta
             </p>
           </div>
         </div>
@@ -41,31 +42,37 @@
           <img
             :src="require('@/assets/img/ruedaz/slider_photo_app1.png')"
             class="img-fluid"
+            style="max-height:500px!important;"
             alt="screenshots"
           />
           <img
             :src="require('@/assets/img/ruedaz/slider_photo_app2.png')"
             class="img-fluid"
+            style="max-height:500px!important;"
             alt="screenshots"
           />
           <img
             :src="require('@/assets/img/ruedaz/slider_photo_app3.png')"
             class="img-fluid"
+            style="max-height:500px!important;"
             alt="screenshots"
           />
           <img
             :src="require('@/assets/img/ruedaz/slider_photo_app4.png')"
             class="img-fluid"
+            style="max-height:500px!important;"
             alt="screenshots"
           />
           <img
             :src="require('@/assets/img/ruedaz/slider_photo_app1.png')"
             class="img-fluid"
+            style="max-height:500px!important;"
             alt="screenshots"
           />
           <img
             :src="require('@/assets/img/ruedaz/slider_photo_app1.png')"
             class="img-fluid"
+            style="max-height:500px!important;"
             alt="screenshots"
           />
         </carousel>
