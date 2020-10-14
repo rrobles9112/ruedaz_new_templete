@@ -6,13 +6,13 @@
       v-bind:class="{ 'footer-with-newsletter': showSubscribe }"
   >
     <!--subscribe newsletter start-->
-    <div class="container" v-show="showSubscribe">
+    <div class="container" v-show="showSubscribe" >
       <div class="row newsletter-wrap primary-bg rounded shadow-lg p-5">
         <div class="col-md-6 col-lg-7 mb-4 mb-md-0 mb-sm-4 mb-lg-0">
           <div class="newsletter-content text-white">
             <h3 class="mb-0 text-white">Subcrite a nuestras ultimas novedades</h3>
             <p class="mb-0">
-              We’re a team of non-cynics who truly care for our work.
+              Somos un equipo de personas que realmente se preocupan porque tu movilidad sea mas facil.
             </p>
           </div>
         </div>

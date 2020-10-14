@@ -15,7 +15,7 @@
             <h2>Apps Screenshots</h2>
             <p>
               Expereincia de usuario nunca a sido tan facil a la hora de obtener
-              un parqueadero tu vehiculo, moto o bicicleta
+              un parqueadero para tu vehiculo, moto o bicicleta
             </p>
           </div>
         </div>
