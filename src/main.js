@@ -3,6 +3,7 @@ import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';
 import store from './store';
+import * as VueGoogleMaps from 'vue2-google-maps';
 
 /* asset imports */
 
@@ -15,6 +16,13 @@ import { gsap } from 'gsap';
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 
 Vue.use(VueScrollTo);
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: "AIzaSyBwANcBPoepQP0o7Yi6ToiYvoaIvgzi7Ts",
+    libraries: "places"
+  },
+  installComponents: true
+});
 Vue.use(VueYoutube);
 Vue.use(BackToTop);
 

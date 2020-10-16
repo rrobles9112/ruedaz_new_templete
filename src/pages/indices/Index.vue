@@ -8,6 +8,7 @@
       <download/>
       <work-process/>
       <price :is-gray="true"/>
+      <Parking />
       <contact/>
     </div>
     <site-footer :show-subscribe="true"/>
@@ -24,6 +25,7 @@ import Screenshots from "../../views/index-one/Screenshots";
 import WorkProcess from "../../views/commons/sections/WorkProcess";
 import Price from "../../views/index-one/Price";
 import Contact from "../../views/index-one/Contact";
+import Parking from "@/components/Paqueaderos";
 import SiteFooter from "../../views/commons/SiteFooter";
 import Copyright from "../../views/commons/Copyright";
 
@@ -37,6 +39,7 @@ export default {
     Screenshots,
     Download,
     WorkProcess,
+    Parking,
     Price,
     Contact,
     SiteFooter,

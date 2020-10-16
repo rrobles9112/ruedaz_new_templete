@@ -41,7 +41,11 @@
             </label>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-8" v-for="(plan, index) in plans" :key="index">
+        <div
+          class="col-lg-4 col-md-6 col-sm-8"
+          v-for="(plan, index) in plans"
+          :key="index"
+        >
           <div class="text-center bg-white single-pricing-pack mt-4">
             <div class="price-img pt-4">
               <img
@@ -56,11 +60,12 @@
                 class="price text-center mb-0 monthly-price color-secondary"
                 v-bind:style="{ display: monthlyPriceDisplay }"
               >
-                {{plan.amount.toLocaleString('es-CO', {
-                style: 'currency',
-                currency: 'COP',
-              })}}
-
+                {{
+                  plan.amount.toLocaleString("es-CO", {
+                    style: "currency",
+                    currency: "COP",
+                  })
+                }}
               </div>
               <div
                 class="price text-center mb-0 yearly-price color-secondary"
@@ -75,7 +80,12 @@
             </div>
             <div class="pricing-content">
               <ul class="list-unstyled mb-4 pricing-feature-list">
-                <li v-for="(feature, indexFeatures) in plan.features" :key="indexFeatures">{{feature}}</li>
+                <li
+                  v-for="(feature, indexFeatures) in plan.features"
+                  :key="indexFeatures"
+                >
+                  {{ feature }}
+                </li>
               </ul>
               <a
                 href="#"
@@ -86,9 +96,6 @@
             </div>
           </div>
         </div>
-
-
-
       </div>
     </div>
   </section>
@@ -101,10 +108,10 @@ export default {
   async mounted() {
     const plansFetched = await plansCollection.get();
     let plansData = [];
-    plansFetched.forEach((doc)=>{
+    plansFetched.forEach((doc) => {
       plansData.push(doc.data());
-    })
-    this.plans = plansData
+    });
+    this.plans = plansData;
   },
   props: {
     isGray: {
@@ -116,7 +123,7 @@ export default {
     return {
       monthlyPriceDisplay: "block",
       yearlyPriceDisplay: "none",
-      plans:[],
+      plans: [],
       afterInputTextSuccess: false,
       beforeInputTextSuccess: true,
     };
