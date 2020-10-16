@@ -7,7 +7,7 @@
   >
     <!--subscribe newsletter start-->
     <div class="container" v-show="showSubscribe" >
-      <div class="row newsletter-wrap primary-bg rounded shadow-lg p-5">
+      <div class="row newsletter-wrap primary-bg rounded shadow-lg p-5" @click.stop="">
         <div class="col-md-6 col-lg-7 mb-4 mb-md-0 mb-sm-4 mb-lg-0">
           <div class="newsletter-content text-white">
             <h3 class="mb-0 text-white">Subcrite a nuestras ultimas novedades</h3>

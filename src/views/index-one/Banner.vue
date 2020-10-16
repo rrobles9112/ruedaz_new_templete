@@ -70,11 +70,11 @@
           </div>
         </div>
         <div class="col-md-6 col-sm-6 col-lg-5">
-          <div class="img-wrap">
+          <div class="img-wrap d-flex justify-content-end">
             <img
               :src="require('@/assets/img/ruedaz/foto_banner_principal.png')"
               alt="app image"
-              class="img-fluid"
+              class="ml-auto img-fluid"
             />
           </div>
         </div>
