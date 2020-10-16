@@ -13,6 +13,7 @@
         @click="/*center={lat: Number.parseFloat(p.lat), lng:parseFloat(p.lng)} && */ toggleInfoWindow(p, index)"
     />
   </gmap-map>
+
 </template>
 
 <script>
@@ -48,14 +49,7 @@ name: "Paqueaderos",
                 <dd class="col-sm-9">${marker.phone}</dd>
                 <dt class="col-sm-3">Dirección</dt>
                 <dd class="col-sm-9">${marker.address}</dd>
-                <dt class="col-sm-3">Capacidad Total</dt>
-                <dd class="col-sm-9">${marker.capacity}</dd>
-                <dt class="col-sm-3">Capacidad Carros</dt>
-                <dd class="col-sm-9">${marker.carCapacity}</dd>
-                <dt class="col-sm-3">Capacidad Bicicletas</dt>
-                <dd class="col-sm-9">${marker.bikeCapacity}</dd>
-                <dt class="col-sm-3">Capacidad Motos</dt>
-                <dd class="col-sm-9">${marker.motoCapacity}</dd>
+
             </dl>
         </div>
 
