@@ -12,7 +12,7 @@
       <div class="row justify-content-center">
         <div class="col-md-9 col-lg-8">
           <div class="section-heading text-center mb-5">
-            <h2>Apps Screenshots</h2>
+            <h2>Conoce mas de ruedaz</h2>
             <p>
               Expereincia de usuario nunca a sido tan facil a la hora de obtener
               un parqueadero para tu vehiculo, moto o bicicleta
