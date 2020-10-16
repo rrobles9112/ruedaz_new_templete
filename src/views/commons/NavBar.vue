@@ -35,7 +35,7 @@
         >
           <ul class="navbar-nav ml-auto menu">
             <li>
-              <a href="#" class="dropdown-toggle">CONOCE MAS DE RUEDAZ</a>
+              <a href="#" class="dropdown-toggle" v-scroll-to="'#screenshots'">CONOCE MAS DE RUEDAZ</a>
               <!-- <ul class="sub-menu">
                 <li>
                   <router-link to="/">Home Page 01</router-link>
@@ -89,17 +89,17 @@
               </ul> -->
             </li>
             <li>
-              <router-link to="#about" v-scroll-to="'#about'"
+              <router-link to="#about" v-scroll-to="'#process'"
                 >¿COMO FUNCIONA?</router-link
               >
             </li>
             <li>
-              <router-link to="#features" v-scroll-to="'#features'"
+              <router-link to="#features" v-scroll-to="'#parkings'"
                 >RED DE PARQUEADEROS</router-link
               >
             </li>
             <li>
-              <a href="#" class="dropdown-toggle">CONTACTENOS</a>
+              <a href="#" v-scroll-to="'#contact'">CONTACTENOS</a>
               <!-- <ul class="sub-menu">
                 <li>
                   <a href="#" class="dropdown-toggle-inner">Login & Sign Up</a>

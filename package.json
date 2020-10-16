@@ -18,9 +18,9 @@
     "vue-backtotop": "^1.6.1",
     "vue-owl-carousel": "^2.0.3",
     "vue-router": "^3.2.0",
-    "vue2-google-maps": "^0.10.7",
-    "vue-scrollto": "^2.18.2",
+    "vue-scrollto": "^2.19.1",
     "vue-youtube": "^1.4.0",
+    "vue2-google-maps": "^0.10.7",
     "vuex": "^3.4.0"
   },
   "devDependencies": {

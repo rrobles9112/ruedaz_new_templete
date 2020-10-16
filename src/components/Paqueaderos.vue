@@ -1,20 +1,21 @@
 <template>
-  <gmap-map ref="googleMap" :center="{ lat: 4.653074, lng: -74.087904 }" :zoom="10" :options="{styles:mapStyle}" style="height: 70ex" map-type-id="roadmap">
-    <gmap-info-window :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen" @closeclick="infoWinOpen = false"></gmap-info-window>
-    <GmapMarker
-        :key="index"
-        v-for="(p, index) in parkings"
-        :icon="require('@/assets/img/ruedaz/ruedaz_marker.png')"
-        :position="{
+  <div id="parkings">
+    <gmap-map ref="googleMap" :center="{ lat: 4.653074, lng: -74.087904 }" :zoom="10" :options="{styles:mapStyle}" style="height: 70ex" map-type-id="roadmap">
+      <gmap-info-window :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen" @closeclick="infoWinOpen = false"></gmap-info-window>
+      <GmapMarker
+          :key="index"
+          v-for="(p, index) in parkings"
+          :icon="require('@/assets/img/ruedaz/ruedaz_marker.png')"
+          :position="{
 							lat: p.location.latitude,
 							lng: p.location.longitude,
 						}"
-        :clickable="true"
-        :draggable="true"
-        @click="/*center={lat: Number.parseFloat(p.lat), lng:parseFloat(p.lng)} && */ toggleInfoWindow(p, index)"
-    />
-  </gmap-map>
-
+          :clickable="true"
+          :draggable="true"
+          @click="/*center={lat: Number.parseFloat(p.lat), lng:parseFloat(p.lng)} && */ toggleInfoWindow(p, index)"
+      />
+    </gmap-map>
+  </div>
 </template>
 
 <script>
