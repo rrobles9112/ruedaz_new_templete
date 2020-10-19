@@ -4,6 +4,7 @@
     <div class="main">
       <banner/>
       <promo/>
+      <about />
       <screenshots :is-gray="true"/>
       <download/>
       <work-process/>
@@ -27,6 +28,7 @@ import Price from "../../views/index-one/Price";
 import Contact from "../../views/index-one/Contact";
 import Parking from "@/components/Paqueaderos";
 import SiteFooter from "../../views/commons/SiteFooter";
+import About from "../../views/index-one/About";
 import Copyright from "../../views/commons/Copyright";
 
 
@@ -37,6 +39,7 @@ export default {
     Banner,
     Promo,
     Screenshots,
+    About,
     Download,
     WorkProcess,
     Parking,
