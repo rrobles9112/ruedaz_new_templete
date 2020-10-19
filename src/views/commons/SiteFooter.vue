@@ -2,29 +2,32 @@
   <!--footer section start-->
   <!--when you want to remove subscribe newsletter container then you should remove .footer-with-newsletter class-->
   <footer
-      class="footer-1 gradient-bg ptb-60"
-      v-bind:class="{ 'footer-with-newsletter': showSubscribe }"
+    class="footer-1 gradient-bg ptb-60"
+    v-bind:class="{ 'footer-with-newsletter': showSubscribe }"
   >
     <!--subscribe newsletter start-->
-    <div class="container" v-show="showSubscribe" >
-      <div class="row newsletter-wrap primary-bg rounded shadow-lg p-5" @click.stop="">
+    <div class="container" v-show="showSubscribe">
+      <div class="row newsletter-wrap primary-bg rounded shadow-lg p-5">
         <div class="col-md-6 col-lg-7 mb-4 mb-md-0 mb-sm-4 mb-lg-0">
           <div class="newsletter-content text-white">
-            <h3 class="mb-0 text-white">Subcrite a nuestras ultimas novedades</h3>
+            <h3 class="mb-0 text-white">
+              Suscribete a nuestras ultimas novedades
+            </h3>
             <p class="mb-0">
-              Somos un equipo de personas que realmente se preocupan porque tu movilidad sea mas facil.
+              Somos un equipo de personas que realmente se preocupan porque tu
+              movilidad sea mas facil.
             </p>
           </div>
         </div>
         <div class="col-md-6 col-lg-5">
           <form class="newsletter-form position-relative">
             <input
-                type="text"
-                class="input-newsletter form-control"
-                placeholder="Escribe tu correo electronico"
-                name="email"
-                required
-                autocomplete="off"
+              type="text"
+              class="input-newsletter form-control"
+              placeholder="Escribe tu correo electronico"
+              name="email"
+              required
+              autocomplete="off"
             />
             <button type="submit" class="disabled">
               <i class="fas fa-paper-plane"></i>
@@ -40,17 +43,17 @@
         <div class="col-md-12 col-lg-4 mb-4 mb-md-4 mb-sm-4 mb-lg-0">
           <a href="#" class="navbar-brand mb-2">
             <img
-                :src="require('@/assets/img/ruedaz/logo-horizontal.svg')"
-                alt="logo"
-                class="img-fluid"
+              :src="require('@/assets/img/ruedaz/logo-horizontal.svg')"
+              alt="logo"
+              class="img-fluid"
             />
           </a>
-          <br/>
+          <br />
           <p>
             Movilidad colaborativa.
           </p>
           <div
-              class="list-inline social-list-default background-color social-hover-2 mt-2"
+            class="list-inline social-list-default background-color social-hover-2 mt-2"
           >
             <li class="list-inline-item">
               <a class="twitter" href="#">
@@ -77,7 +80,7 @@
         <div class="col-md-12 col-lg-8">
           <div class="row mt-0">
             <div
-                class="col-sm-6 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0 mb-lg-0"
+              class="col-sm-6 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0 mb-lg-0"
             >
               <h6 class="text-uppercase">Nosotros</h6>
               <ul>
@@ -93,7 +96,6 @@
                 <li>
                   <a href="#">contactenos@ruedaz.com</a>
                 </li>
-
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3">

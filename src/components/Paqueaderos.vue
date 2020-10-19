@@ -1,264 +1,266 @@
 <template>
   <div id="parkings">
-    <gmap-map ref="googleMap" :center="{ lat: 4.653074, lng: -74.087904 }" :zoom="10" :options="{styles:mapStyle}" style="height: 70ex" map-type-id="roadmap">
-      <gmap-info-window :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen" @closeclick="infoWinOpen = false"></gmap-info-window>
+    <gmap-map
+      ref="googleMap"
+      :center="{ lat: 4.653074, lng: -74.087904 }"
+      :zoom="10"
+      :options="{ styles: mapStyle }"
+      style="height: 70ex"
+      map-type-id="roadmap"
+    >
+      <gmap-info-window
+        :options="infoOptions"
+        :position="infoWindowPos"
+        :opened="infoWinOpen"
+        @closeclick="infoWinOpen = false"
+      ></gmap-info-window>
       <GmapMarker
-          :key="index"
-          v-for="(p, index) in parkings"
-          :icon="require('@/assets/img/ruedaz/ruedaz_marker.png')"
-          :position="{
-							lat: p.location.latitude,
-							lng: p.location.longitude,
-						}"
-          :clickable="true"
-          :draggable="true"
-          @click="/*center={lat: Number.parseFloat(p.lat), lng:parseFloat(p.lng)} && */ toggleInfoWindow(p, index)"
+        :key="index"
+        v-for="(p, index) in parkings"
+        :icon="require('@/assets/img/ruedaz/ruedaz_marker.png')"
+        :position="{
+          lat: p.location.latitude,
+          lng: p.location.longitude,
+        }"
+        :clickable="true"
+        :draggable="false"
+        @click="
+          /*center={lat: Number.parseFloat(p.lat), lng:parseFloat(p.lng)} && */ toggleInfoWindow(
+            p,
+            index
+          )
+        "
       />
     </gmap-map>
   </div>
 </template>
 
 <script>
-import {parkingsCollection} from "@/firebase";
+import { parkingsCollection } from "@/firebase";
 export default {
-name: "Paqueaderos",
-  data(){
-    return{
+  name: "Paqueaderos",
+  data() {
+    return {
       parkings: [],
       infoWindowPos: null,
       infoWinOpen: false,
       mapStyle: [
         {
-          "elementType": "geometry",
-          "stylers": [
+          elementType: "geometry",
+          stylers: [
             {
-              "color": "#1d2c4d"
-            }
-          ]
+              color: "#f5f5f5",
+            },
+          ],
         },
         {
-          "elementType": "labels.text.fill",
-          "stylers": [
+          elementType: "labels",
+          stylers: [
             {
-              "color": "#8ec3b9"
-            }
-          ]
+              visibility: "off",
+            },
+          ],
         },
         {
-          "elementType": "labels.text.stroke",
-          "stylers": [
+          elementType: "labels.icon",
+          stylers: [
             {
-              "color": "#1a3646"
-            }
-          ]
+              visibility: "off",
+            },
+          ],
         },
         {
-          "featureType": "administrative.country",
-          "elementType": "geometry.stroke",
-          "stylers": [
+          elementType: "labels.text.fill",
+          stylers: [
             {
-              "color": "#4b6878"
-            }
-          ]
+              color: "#616161",
+            },
+          ],
         },
         {
-          "featureType": "administrative.land_parcel",
-          "elementType": "labels.text.fill",
-          "stylers": [
+          elementType: "labels.text.stroke",
+          stylers: [
             {
-              "color": "#64779e"
-            }
-          ]
+              color: "#f5f5f5",
+            },
+          ],
         },
         {
-          "featureType": "administrative.province",
-          "elementType": "geometry.stroke",
-          "stylers": [
+          featureType: "administrative",
+          elementType: "geometry",
+          stylers: [
             {
-              "color": "#4b6878"
-            }
-          ]
+              visibility: "off",
+            },
+          ],
         },
         {
-          "featureType": "landscape.man_made",
-          "elementType": "geometry.stroke",
-          "stylers": [
+          featureType: "administrative.land_parcel",
+          stylers: [
             {
-              "color": "#334e87"
-            }
-          ]
+              visibility: "off",
+            },
+          ],
         },
         {
-          "featureType": "landscape.natural",
-          "elementType": "geometry",
-          "stylers": [
+          featureType: "administrative.land_parcel",
+          elementType: "labels.text.fill",
+          stylers: [
             {
-              "color": "#023e58"
-            }
-          ]
+              color: "#bdbdbd",
+            },
+          ],
         },
         {
-          "featureType": "poi",
-          "elementType": "geometry",
-          "stylers": [
+          featureType: "administrative.neighborhood",
+          stylers: [
             {
-              "color": "#283d6a"
-            }
-          ]
+              visibility: "off",
+            },
+          ],
         },
         {
-          "featureType": "poi",
-          "elementType": "labels.text.fill",
-          "stylers": [
+          featureType: "poi",
+          stylers: [
             {
-              "color": "#6f9ba5"
-            }
-          ]
+              visibility: "off",
+            },
+          ],
         },
         {
-          "featureType": "poi",
-          "elementType": "labels.text.stroke",
-          "stylers": [
+          featureType: "poi",
+          elementType: "geometry",
+          stylers: [
             {
-              "color": "#1d2c4d"
-            }
-          ]
+              color: "#eeeeee",
+            },
+          ],
         },
         {
-          "featureType": "poi.park",
-          "elementType": "geometry.fill",
-          "stylers": [
+          featureType: "poi",
+          elementType: "labels.text.fill",
+          stylers: [
             {
-              "color": "#023e58"
-            }
-          ]
+              color: "#757575",
+            },
+          ],
         },
         {
-          "featureType": "poi.park",
-          "elementType": "labels.text.fill",
-          "stylers": [
+          featureType: "poi.park",
+          elementType: "geometry",
+          stylers: [
             {
-              "color": "#3C7680"
-            }
-          ]
+              color: "#e5e5e5",
+            },
+          ],
         },
         {
-          "featureType": "road",
-          "elementType": "geometry",
-          "stylers": [
+          featureType: "poi.park",
+          elementType: "labels.text.fill",
+          stylers: [
             {
-              "color": "#304a7d"
-            }
-          ]
+              color: "#9e9e9e",
+            },
+          ],
         },
         {
-          "featureType": "road",
-          "elementType": "labels.text.fill",
-          "stylers": [
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [
             {
-              "color": "#98a5be"
-            }
-          ]
+              color: "#ffffff",
+            },
+          ],
         },
         {
-          "featureType": "road",
-          "elementType": "labels.text.stroke",
-          "stylers": [
+          featureType: "road",
+          elementType: "labels.icon",
+          stylers: [
             {
-              "color": "#1d2c4d"
-            }
-          ]
+              visibility: "off",
+            },
+          ],
         },
         {
-          "featureType": "road.highway",
-          "elementType": "geometry",
-          "stylers": [
+          featureType: "road.arterial",
+          elementType: "labels.text.fill",
+          stylers: [
             {
-              "color": "#2c6675"
-            }
-          ]
+              color: "#757575",
+            },
+          ],
         },
         {
-          "featureType": "road.highway",
-          "elementType": "geometry.stroke",
-          "stylers": [
+          featureType: "road.highway",
+          elementType: "geometry",
+          stylers: [
             {
-              "color": "#255763"
-            }
-          ]
+              color: "#dadada",
+            },
+          ],
         },
         {
-          "featureType": "road.highway",
-          "elementType": "labels.text.fill",
-          "stylers": [
+          featureType: "road.highway",
+          elementType: "labels.text.fill",
+          stylers: [
             {
-              "color": "#b0d5ce"
-            }
-          ]
+              color: "#616161",
+            },
+          ],
         },
         {
-          "featureType": "road.highway",
-          "elementType": "labels.text.stroke",
-          "stylers": [
+          featureType: "road.local",
+          elementType: "labels.text.fill",
+          stylers: [
             {
-              "color": "#023e58"
-            }
-          ]
+              color: "#9e9e9e",
+            },
+          ],
         },
         {
-          "featureType": "transit",
-          "elementType": "labels.text.fill",
-          "stylers": [
+          featureType: "transit",
+          stylers: [
             {
-              "color": "#98a5be"
-            }
-          ]
+              visibility: "off",
+            },
+          ],
         },
         {
-          "featureType": "transit",
-          "elementType": "labels.text.stroke",
-          "stylers": [
+          featureType: "transit.line",
+          elementType: "geometry",
+          stylers: [
             {
-              "color": "#1d2c4d"
-            }
-          ]
+              color: "#e5e5e5",
+            },
+          ],
         },
         {
-          "featureType": "transit.line",
-          "elementType": "geometry.fill",
-          "stylers": [
+          featureType: "transit.station",
+          elementType: "geometry",
+          stylers: [
             {
-              "color": "#283d6a"
-            }
-          ]
+              color: "#eeeeee",
+            },
+          ],
         },
         {
-          "featureType": "transit.station",
-          "elementType": "geometry",
-          "stylers": [
+          featureType: "water",
+          elementType: "geometry",
+          stylers: [
             {
-              "color": "#3a4762"
-            }
-          ]
+              color: "#c9c9c9",
+            },
+          ],
         },
         {
-          "featureType": "water",
-          "elementType": "geometry",
-          "stylers": [
+          featureType: "water",
+          elementType: "labels.text.fill",
+          stylers: [
             {
-              "color": "#0e1626"
-            }
-          ]
+              color: "#9e9e9e",
+            },
+          ],
         },
-        {
-          "featureType": "water",
-          "elementType": "labels.text.fill",
-          "stylers": [
-            {
-              "color": "#4e6d70"
-            }
-          ]
-        }
       ],
       infoOptions: {
         content: "",
@@ -267,10 +269,10 @@ name: "Paqueaderos",
           height: -35,
         },
       },
-    }
+    };
   },
-  methods:{
-    toggleInfoWindow: function (marker, idx) {
+  methods: {
+    toggleInfoWindow: function(marker, idx) {
       this.infoWindowPos = {
         lat: parseFloat(marker.lat),
         lng: parseFloat(marker.lng),
@@ -279,11 +281,11 @@ name: "Paqueaderos",
           <div class="container-sm" style="max-width: 20vw;">
               <dl class="row">
                 <dt class="col-sm-3">Nombre</dt>
-                <dd class="col-sm-9">${marker.name}</dd>
+                <dd class="col-sm-9">${marker.name ?? ""}</dd>
                 <dt class="col-sm-3">Teléfono</dt>
-                <dd class="col-sm-9">${marker.phone}</dd>
+                <dd class="col-sm-9">${marker.phone ?? ""}</dd>
                 <dt class="col-sm-3">Dirección</dt>
-                <dd class="col-sm-9">${marker.address}</dd>
+                <dd class="col-sm-9">${marker.address ?? ""}</dd>
 
             </dl>
         </div>
@@ -308,10 +310,8 @@ name: "Paqueaderos",
       parkingsData.push(doc.data());
     });
     this.parkings = parkingsData;
-  }
-}
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
