@@ -10,6 +10,7 @@
   "dependencies": {
     "@chenfengyuan/vue-countdown": "^1.1.5",
     "animated-number-vue": "^1.0.0",
+    "ant-design-vue": "^1.6.5",
     "core-js": "^3.6.5",
     "firebase": "^7.24.0",
     "gsap": "^3.5.1",

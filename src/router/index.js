@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import IndexOne from '../pages/indices/Index'
+import IndexPromociones from "@/pages/indices/IndexPromociones";
 
 
 Vue.use(VueRouter);
@@ -12,6 +13,12 @@ const routes = [
         path: '/',
         name: 'IndexOne',
         component: IndexOne,
+        meta: { title: 'Ruedaz - Movilidad Colaborativa'}
+    },
+    {
+        path: '/promociones',
+        name: 'IndexPromociones',
+        component: IndexPromociones,
         meta: { title: 'Ruedaz - Movilidad Colaborativa'}
     },
 

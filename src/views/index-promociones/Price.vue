@@ -91,7 +91,7 @@
                 href="#"
                 class="btn btn-outline-brand-02 btn-rounded mb-3"
                 target="_blank"
-                >Comprar</a
+                >Mas Info</a
               >
             </div>
           </div>

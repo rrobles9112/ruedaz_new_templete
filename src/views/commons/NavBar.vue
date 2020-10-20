@@ -2,11 +2,7 @@
   <header class="header">
     <nav
       class="navbar navbar-expand-lg fixed-top"
-      v-bind:class="{
-        affix: hasAffix,
-        'custom-nav': coloredLogo,
-        'bg-transparent': !coloredLogo,
-      }"
+      style="background-color: black;"
     >
       <div class="container">
         <a class="navbar-brand" href="/">
@@ -35,7 +31,9 @@
         >
           <ul class="navbar-nav ml-auto menu">
             <li>
-              <a href="#" class="dropdown-toggle" v-scroll-to="'#screenshots'">CONOCE MAS DE RUEDAZ</a>
+              <a href="#" class="dropdown-toggle" v-scroll-to="'#screenshots'"
+                >CONOCE MAS DE RUEDAZ</a
+              >
               <!-- <ul class="sub-menu">
                 <li>
                   <router-link to="/">Home Page 01</router-link>

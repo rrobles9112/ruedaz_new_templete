@@ -2,7 +2,7 @@
   <!--footer section start-->
   <!--when you want to remove subscribe newsletter container then you should remove .footer-with-newsletter class-->
   <footer
-    class="footer-1 gradient-bg ptb-60"
+    class="footer-1 text-white ptb-60"
     v-bind:class="{ 'footer-with-newsletter': showSubscribe }"
   >
     <!--subscribe newsletter start-->
@@ -82,8 +82,8 @@
             <div
               class="col-sm-6 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0 mb-lg-0"
             >
-              <h6 class="text-uppercase">Nosotros</h6>
-              <ul>
+              <h6 class="text-uppercase text-white">Nosotros</h6>
+              <ul class="text-white">
                 <li>
                   <a href="#">Carrera 14 #89 -48</a>
                 </li>
@@ -99,7 +99,7 @@
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3">
-              <h6 class="text-uppercase">Soporte</h6>
+              <h6 class="text-uppercase text-white">Soporte</h6>
               <ul>
                 <li>
                   <a href="#">FAQ</a>
